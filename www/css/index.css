@@ -1,0 +1,117 @@
+/**********************************
+        DEFAULTS
+**********************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #F55722;
+    height: 6rem;
+    box-shadow: 1px 1px 3px 2px #bdbdbd
+}
+
+#back {
+    display: none;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+
+#apptitle {
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem;
+    color: #FFF;
+}
+
+/**********************************
+        PAGES
+**********************************/
+
+[data-role="page"] {
+    width: 94%;
+    margin: 1rem auto 0 auto;
+}
+
+#map {
+    display: none;
+    box-shadow: 1px 1px 1px 1px #bdbdbd;
+}
+
+.contact {
+    margin: .5rem auto;
+    height: 6rem;
+    text-align: left;
+    background-color: #FFF;
+    box-shadow: 1px 1px 1px 1px #bdbdbd;
+    padding: 2rem 0 2rem 7vw;
+}
+
+h2 {
+    font-size: 2.2rem;
+/*    padding: 1.8rem;*/
+}
+
+#map_content {
+    height: 77vh;
+    border: 1px solid #EEE;
+    
+}
+
+/**********************************
+        DIALOG
+**********************************/
+
+[data-role="dialog"] {
+    display: none;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, .8);
+    height: 100vh;
+    width: 100vw;
+    transition: all 3s ease;
+}
+
+.dialogActive {
+    display: block;
+}
+
+#dialogContent {
+    position: fixed;
+    top: 37vh;
+    height: 16rem;
+    width: 100vw;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 1);
+    color: #FF5722;
+    font-size: 1rem;    
+    font-weight: 100;
+    transition: all 500s ease;
+    padding: 2rem;
+}
+
+#dialogMessage {
+    width: 100%;
+    height: 16vh;
+}
+
+#btn {
+    border: 1px solid red;
+    width: 20%;
+    font-size: 1rem;
+    padding: .5rem;
+    text-align: center;
+    margin-left: 75%;
+}
